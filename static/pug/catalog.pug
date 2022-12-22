@@ -143,6 +143,13 @@ html(lang='ru-RU')
                                                 .catalog-filter__box.catalog-filter__box--radio
                                                     input.catalog-filter__radio(type='radio' id='under-the-order' name='availability' value='under-the-order')
                                                     label.catalog-filter__label(for='under-the-order') Под заказ
+                                .catalog-books
+                                    .catalog-books__sort
+                                        label.catalog-books__sort-title(for='sort') Сортировать:
+                                        select.catalog-books__select(size='1' id='sort')
+                                            option.catalog-books__options по популярности
+                                            option.catalog-books__options по названию
+                                            option.catalog-books__options по новизне
             footer.footer
                 .container
                     .footer__wrapper
