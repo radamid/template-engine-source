@@ -80,6 +80,69 @@ html(lang='ru-RU')
                         .container
                             h1.catalog__title Каталог книг
                             .catalog__wrapper
+                                .catalog-filter
+                                    form.catalog-filter__form
+                                        fieldset.catalog-filter__fieldset
+                                            fieldset.catalog-filter__fieldset
+                                                p.catalog-filter__legend Категория
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='fiction' name='fiction')
+                                                    label.catalog-filter__label(for='fiction') Художественная литература
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='for-children' name='for-children')
+                                                    label.catalog-filter__label(for='for-children') Книги для детей
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='education' name='education' checked='')
+                                                    label.catalog-filter__label(for='education') Образование
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='science-and-technology' name='science-and-technology')
+                                                    label.catalog-filter__label(for='science-and-technology') Наука и техника
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='society' name='society')
+                                                    label.catalog-filter__label(for='society') Общество
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='business-literature' name='business-literature')
+                                                    label.catalog-filter__label(for='business-literature') Деловая литература
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='health' name='health')
+                                                    label.catalog-filter__label(for='health') Здоровье
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='hobby' name='hobby' checked='')
+                                                    label.catalog-filter__label(for='hobby') Увлечения
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='psychology' name='psychology')
+                                                    label.catalog-filter__label(for='psychology') Психология
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='esoterics' name='esoterics')
+                                                    label.catalog-filter__label(for='esoterics') Эзотерика
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='philosophy-and-religion' name='philosophy-and-religion')
+                                                    label.catalog-filter__label(for='philosophy-and-religion') Философия и религия
+                                                .catalog-filter__box
+                                                    input.catalog-filter__checkbox(type='checkbox' id='art' name='art' checked='')
+                                                    label.catalog-filter__label(for='art') Искусство
+                                            fieldset.catalog-filter__fieldset
+                                                p.catalog-filter__legend Статус
+                                                .catalog-filter__box.catalog-filter__box--radio
+                                                    input.catalog-filter__radio(type='radio' id='bestsellers' name='status' value='bestsellers')
+                                                    label.catalog-filter__label(for='bestsellers') Хиты продаж
+                                                .catalog-filter__box.catalog-filter__box--radio
+                                                    input.catalog-filter__radio(type='radio' id='news-books' name='status' value='news-books' checked='')
+                                                    label.catalog-filter__label(for='news-books') Новинки
+                                                .catalog-filter__box.catalog-filter__box--radio
+                                                    input.catalog-filter__radio(type='radio' id='preorder' name='status' value='preorder')
+                                                    label.catalog-filter__label(for='preorder') Предзаказ
+                                            fieldset.catalog-filter__fieldset
+                                                p.catalog-filter__legend Наличие
+                                                .catalog-filter__box.catalog-filter__box--radio
+                                                    input.catalog-filter__radio(type='radio' id='in-the-shop' name='availability' value='in-the-shop')
+                                                    label.catalog-filter__label(for='in-the-shop') В магазине
+                                                .catalog-filter__box.catalog-filter__box--radio
+                                                    input.catalog-filter__radio(type='radio' id='in-the-internet-shop' name='availability' value='in-the-internet-shop' checked='')
+                                                    label.catalog-filter__label(for='in-the-internet-shop') В интернет-магазине
+                                                .catalog-filter__box.catalog-filter__box--radio
+                                                    input.catalog-filter__radio(type='radio' id='under-the-order' name='availability' value='under-the-order')
+                                                    label.catalog-filter__label(for='under-the-order') Под заказ
             footer.footer
                 .container
                     .footer__wrapper
