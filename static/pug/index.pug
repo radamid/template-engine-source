@@ -1,5 +1,9 @@
 extends layout/layout
 
+block head
+  - var page_title= 'Сайт с книгами "По полочкам"'
+  include modules/head
+
 block content
   main.index-page
     include modules/hero

@@ -1,5 +1,9 @@
 extends layout/layout
 
+block head
+  - var page_title= 'Каталог книг "По полочкам"'
+  include modules/head
+
 block content
   main.catalog-page
     include modules/breadcrumbs

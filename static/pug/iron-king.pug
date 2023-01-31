@@ -1,5 +1,9 @@
 extends layout/layout
 
+block head
+  - var page_title= 'Книга "Железный король" из каталога книг "По полочкам"'
+  include modules/head
+
 block content
   main.book-page
     include modules/breadcrumbs
